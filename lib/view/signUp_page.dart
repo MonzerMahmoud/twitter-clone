@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/instance_manager.dart';
+import 'package:twitter_clone/view/control_view.dart';
 import 'package:twitter_clone/view/login_page.dart';
 import 'package:twitter_clone/view/welcome_page.dart';
 import 'package:twitter_clone/view/widgets/custom_button.dart';
@@ -132,7 +133,7 @@ class SignUpPage extends StatelessWidget {
               ),
               CustomButton(
                   onPressed: () {
-      
+                    Get.offAll(() => ControlView());
                   },
                   text: 'Sign Up')
             ],
